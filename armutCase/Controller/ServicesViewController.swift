@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ServicesViewController: UIViewController {
-
+class ServicesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var trendingCollectionView: UICollectionView!
+    @IBOutlet weak var cleaningCollectionView: UICollectionView!
+    @IBOutlet weak var blogCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +28,18 @@ class ServicesViewController: UIViewController {
         let micImage = UIImage(named: "Action")
         searchController.searchBar.setImage(micImage, for: .bookmark, state: .normal)
         searchController.searchBar.showsBookmarkButton = true
+    }
+    
+    func getHomeContent(){
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
     }
     
 
