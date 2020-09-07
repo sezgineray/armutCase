@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		997A12FD3190ECB75CBA9DB7 /* Pods_armutCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D7E2B5627F580E99252A39 /* Pods_armutCase.framework */; };
 		DCEFED1925064D7B009E2F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED1825064D7B009E2F4B /* AppDelegate.swift */; };
 		DCEFED1B25064D7B009E2F4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED1A25064D7B009E2F4B /* SceneDelegate.swift */; };
 		DCEFED2225064D7B009E2F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEFED2025064D7B009E2F4B /* Main.storyboard */; };
@@ -18,9 +19,13 @@
 		DCEFED432506A520009E2F4B /* BlogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED422506A520009E2F4B /* BlogCollectionViewCell.swift */; };
 		DCEFED452506B585009E2F4B /* HomeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED442506B585009E2F4B /* HomeContent.swift */; };
 		DCEFED472506B595009E2F4B /* ServiceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED462506B595009E2F4B /* ServiceDetail.swift */; };
+		DCEFED492506C13F009E2F4B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DCEFED482506C13F009E2F4B /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111C2BC63496F8250E7F06A1 /* Pods-armutCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armutCase.debug.xcconfig"; path = "Target Support Files/Pods-armutCase/Pods-armutCase.debug.xcconfig"; sourceTree = "<group>"; };
+		21D7E2B5627F580E99252A39 /* Pods_armutCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_armutCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D2F34EE78D33819D9A7362 /* Pods-armutCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armutCase.release.xcconfig"; path = "Target Support Files/Pods-armutCase/Pods-armutCase.release.xcconfig"; sourceTree = "<group>"; };
 		DCEFED1525064D7B009E2F4B /* armutCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = armutCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEFED1825064D7B009E2F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCEFED1A25064D7B009E2F4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		DCEFED422506A520009E2F4B /* BlogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCollectionViewCell.swift; sourceTree = "<group>"; };
 		DCEFED442506B585009E2F4B /* HomeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContent.swift; sourceTree = "<group>"; };
 		DCEFED462506B595009E2F4B /* ServiceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetail.swift; sourceTree = "<group>"; };
+		DCEFED482506C13F009E2F4B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997A12FD3190ECB75CBA9DB7 /* Pods_armutCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B15A7739B54EA83E48F8FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21D7E2B5627F580E99252A39 /* Pods_armutCase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ED2DC3692F29287720DD598 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				111C2BC63496F8250E7F06A1 /* Pods-armutCase.debug.xcconfig */,
+				41D2F34EE78D33819D9A7362 /* Pods-armutCase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DCEFED0C25064D7B009E2F4B = {
 			isa = PBXGroup;
 			children = (
+				DCEFED482506C13F009E2F4B /* Podfile */,
 				DCEFED1725064D7B009E2F4B /* armutCase */,
 				DCEFED1625064D7B009E2F4B /* Products */,
+				7ED2DC3692F29287720DD598 /* Pods */,
+				11B15A7739B54EA83E48F8FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCEFED2B25064D7F009E2F4B /* Build configuration list for PBXNativeTarget "armutCase" */;
 			buildPhases = (
+				E3546018AC7F327866D43BAC /* [CP] Check Pods Manifest.lock */,
 				DCEFED1125064D7B009E2F4B /* Sources */,
 				DCEFED1225064D7B009E2F4B /* Frameworks */,
 				DCEFED1325064D7B009E2F4B /* Resources */,
+				844607C2EC165C9B4C4FBDA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,11 +196,54 @@
 			files = (
 				DCEFED2725064D7F009E2F4B /* LaunchScreen.storyboard in Resources */,
 				DCEFED2425064D7F009E2F4B /* Assets.xcassets in Resources */,
+				DCEFED492506C13F009E2F4B /* Podfile in Resources */,
 				DCEFED2225064D7B009E2F4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		844607C2EC165C9B4C4FBDA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-armutCase/Pods-armutCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-armutCase/Pods-armutCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-armutCase/Pods-armutCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3546018AC7F327866D43BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-armutCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCEFED1125064D7B009E2F4B /* Sources */ = {
@@ -326,6 +399,7 @@
 		};
 		DCEFED2C25064D7F009E2F4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111C2BC63496F8250E7F06A1 /* Pods-armutCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -344,6 +418,7 @@
 		};
 		DCEFED2D25064D7F009E2F4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D2F34EE78D33819D9A7362 /* Pods-armutCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
