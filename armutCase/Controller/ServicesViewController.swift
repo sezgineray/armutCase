@@ -101,10 +101,13 @@ class ServicesViewController: UIViewController, UICollectionViewDelegate, UIColl
 
     
     // MARK: - Navigation
-
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         
+        if (segue.identifier == "serviceDetailSegue") {
+            let serviceDetailViewController = segue.destination as! ServiceDetailsViewController
+            let serviceCollectionViewCell = sender as! ServiceCollectionViewCell
+            let serviceId = serviceCollectionViewCell.id
+            serviceDetailViewController.serviceId = serviceId
+        }
     }
     
 
