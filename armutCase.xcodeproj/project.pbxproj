@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		DCEFED452506B585009E2F4B /* HomeContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED442506B585009E2F4B /* HomeContent.swift */; };
 		DCEFED472506B595009E2F4B /* ServiceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED462506B595009E2F4B /* ServiceDetail.swift */; };
 		DCEFED492506C13F009E2F4B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DCEFED482506C13F009E2F4B /* Podfile */; };
+		DCEFED4B2507A978009E2F4B /* DownloadImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED4A2507A977009E2F4B /* DownloadImageFromUrl.swift */; };
+		DCEFED4D2507BA64009E2F4B /* OtherServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEFED4C2507BA64009E2F4B /* OtherServiceCollectionViewCell.swift */; };
+		DCF091E42509489C00A28B0A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF091E32509489C00A28B0A /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		DCEFED442506B585009E2F4B /* HomeContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContent.swift; sourceTree = "<group>"; };
 		DCEFED462506B595009E2F4B /* ServiceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetail.swift; sourceTree = "<group>"; };
 		DCEFED482506C13F009E2F4B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DCEFED4A2507A977009E2F4B /* DownloadImageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageFromUrl.swift; sourceTree = "<group>"; };
+		DCEFED4C2507BA64009E2F4B /* OtherServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		DCF091E32509489C00A28B0A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,6 @@
 				111C2BC63496F8250E7F06A1 /* Pods-armutCase.debug.xcconfig */,
 				41D2F34EE78D33819D9A7362 /* Pods-armutCase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,8 @@
 				DCEFED3925065567009E2F4B /* Model */,
 				DCEFED3825065561009E2F4B /* View */,
 				DCEFED3725065520009E2F4B /* Controller */,
+				DCEFED4A2507A977009E2F4B /* DownloadImageFromUrl.swift */,
+				DCF091E32509489C00A28B0A /* GradientView.swift */,
 			);
 			path = armutCase;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				DCEFED402506A4FD009E2F4B /* ServiceCollectionViewCell.swift */,
+				DCEFED4C2507BA64009E2F4B /* OtherServiceCollectionViewCell.swift */,
 				DCEFED422506A520009E2F4B /* BlogCollectionViewCell.swift */,
 			);
 			path = View;
@@ -252,8 +260,11 @@
 			files = (
 				DCEFED452506B585009E2F4B /* HomeContent.swift in Sources */,
 				DCEFED412506A4FD009E2F4B /* ServiceCollectionViewCell.swift in Sources */,
+				DCF091E42509489C00A28B0A /* GradientView.swift in Sources */,
 				DCEFED472506B595009E2F4B /* ServiceDetail.swift in Sources */,
+				DCEFED4D2507BA64009E2F4B /* OtherServiceCollectionViewCell.swift in Sources */,
 				DCEFED3B2506593B009E2F4B /* ServicesViewController.swift in Sources */,
+				DCEFED4B2507A978009E2F4B /* DownloadImageFromUrl.swift in Sources */,
 				DCEFED432506A520009E2F4B /* BlogCollectionViewCell.swift in Sources */,
 				DCEFED1925064D7B009E2F4B /* AppDelegate.swift in Sources */,
 				DCEFED1B25064D7B009E2F4B /* SceneDelegate.swift in Sources */,

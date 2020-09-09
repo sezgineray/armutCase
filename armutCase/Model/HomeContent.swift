@@ -9,12 +9,12 @@
 import Foundation
 
 class HomeContent: Codable {
-    var trending: [Service]?
-    var cleaning: [Service]?
-    var blog: [String:String]?
+    var trendingServices: [Service]?
+    var otherServices: [Service]?
+    var blogItems: [BlogItem]?
 
     enum CodingKeys: String, CodingKey {
-        case trending, cleaning = "other", blog = "posts"
+        case trendingServices = "trending", otherServices = "other", blogItems = "posts"
     }
 }
 
@@ -28,5 +28,16 @@ class Service: Codable {
     
     enum CodingKeys: String, CodingKey {
         case id, serviceId = "service_id", name, longName = "long_name", imageURL = "image_url", proCount = "pro_count"
+    }
+}
+
+class BlogItem: Codable {
+    var link: String
+    var title: String
+    var category: String
+    var imageURL: String
+    
+    enum CodingKeys: String, CodingKey {
+        case link, title, category, imageURL = "image_url"
     }
 }

@@ -1,15 +1,14 @@
 //
-//  ServiceCollectionViewCell.swift
+//  OtherServiceCollectionViewCell.swift
 //  armutCase
 //
-//  Created by Eray Sezgin on 9/7/20.
+//  Created by Eray Sezgin on 9/8/20.
 //  Copyright © 2020 Eray Sezgin. All rights reserved.
 //
 
 import UIKit
 
-class ServiceCollectionViewCell: UICollectionViewCell {
-    
+class OtherServiceCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
